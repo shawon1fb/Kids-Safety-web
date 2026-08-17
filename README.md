@@ -3,6 +3,8 @@
 Static marketing and legal site for **Kids Safety: Parent Guide**. Plain HTML
 and one stylesheet — no build step, no dependencies, no JavaScript.
 
+**Live URL:** https://shawon1fb.github.io/Kids-Safety-web/
+
 | File | Purpose |
 |---|---|
 | `index.html` | Landing page |
