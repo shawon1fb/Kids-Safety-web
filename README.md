@@ -45,10 +45,8 @@ firebase deploy --only hosting
 ## After it is live
 
 1. Put the privacy and support URLs into App Store Connect and Play Console.
-2. Update the in-app links in
-   `Smart Kids iOS/Smart Kids/Core/Legal/LegalLinks.swift` — the privacy URL
-   there still points at `https://firabsecrud.web.app/privacy-policy`, and
-   terms still resolve to Apple's standard EULA.
+2. ✅ Done — `Smart Kids iOS/Smart Kids/Core/Legal/LegalLinks.swift` points at
+   `privacy.html` and `terms.html` on this site.
 
 ## Before publishing, check
 

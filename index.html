@@ -12,8 +12,11 @@
 <meta property="og:description" content="101 real-world safety scenarios with the exact words to use.">
 <meta property="og:image" content="assets/icon-512.png">
 <meta property="og:type" content="website">
+<script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
     <div class="wrap">
@@ -30,31 +33,76 @@
 </header>
 
 <div class="hero">
-    <div class="wrap">
-        <img class="hero-icon" src="assets/icon-512.png" alt="Kids Safety: Parent Guide app icon">
-        <div class="eyebrow">For Kids of All Ages</div>
-        <h1>101 real-world scenarios.<br>The exact words to use.</h1>
-        <p>
+    <div class="hero-aurora" aria-hidden="true"></div>
+    <div class="hero-blobs" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+    <div class="hero-sparks" aria-hidden="true">
+        <span style="--x: 8%;  --d: 0s;    --s: 1.1rem">🚨</span>
+        <span style="--x: 22%; --d: -6s;   --s: 0.9rem">🛡️</span>
+        <span style="--x: 38%; --d: -11s;  --s: 1rem">🏫</span>
+        <span style="--x: 57%; --d: -3.5s; --s: 1.2rem">💛</span>
+        <span style="--x: 72%; --d: -8s;   --s: 0.95rem">💻</span>
+        <span style="--x: 88%; --d: -13s;  --s: 1.05rem">🌍</span>
+    </div>
+
+    <div class="wrap hero-inner">
+        <div class="hero-icon-wrap reveal" data-delay="0">
+            <span class="hero-icon-glow" aria-hidden="true"></span>
+            <img class="hero-icon" src="assets/icon-512.png" alt="Kids Safety: Parent Guide app icon">
+        </div>
+        <div class="eyebrow reveal" data-delay="1">For Kids of All Ages</div>
+        <h1 class="reveal" data-delay="2">101 real-world scenarios.<br>The exact words to use.</h1>
+        <p class="reveal" data-delay="3">
             Kids Safety: Parent Guide turns "be careful out there" into specific
             conversations you can have tonight. What happens, what to do step by
             step, and one tip that makes it stick.
         </p>
-        <a class="btn light" href="support.html">Get support</a>
-        <div class="badges">
+        <div class="hero-actions reveal" data-delay="4">
+            <a class="btn light" href="support.html">Get support</a>
+            <a class="btn ghost" href="#inside">See what is inside</a>
+        </div>
+        <div class="badges reveal" data-delay="5">
             <span class="badge">7 chapters</span>
             <span class="badge">101 scenarios</span>
             <span class="badge">Quiz after every scenario</span>
             <span class="badge">One-time unlock, no subscription</span>
         </div>
     </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path d="M0,64 C240,120 480,8 720,40 C960,72 1200,120 1440,72 L1440,120 L0,120 Z"></path>
+    </svg>
 </div>
 
-<main class="wrap">
+<main class="wrap" id="main">
 
-    <section>
-        <h2>What is inside</h2>
+    <section class="stats reveal">
+        <div class="stat">
+            <span class="stat-num" data-count="7">7</span>
+            <span class="stat-label">chapters</span>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-count="101">101</span>
+            <span class="stat-label">scenarios</span>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-count="202">202</span>
+            <span class="stat-label">quiz questions</span>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-count="1" data-suffix="&times;">1</span>
+            <span class="stat-label">one-time unlock</span>
+        </div>
+    </section>
+
+    <section id="inside">
+        <h2 class="reveal">What is inside</h2>
         <div class="grid">
-            <div class="card">
+            <div class="card tilt reveal" data-delay="1" style="--accent: #ff6b6b">
+                <span class="card-icon" aria-hidden="true">📖</span>
                 <h3>Scenarios, not lectures</h3>
                 <p>
                     Every entry follows the same shape: the situation, numbered
@@ -62,7 +110,8 @@
                     lesson land. Written for a parent to read with a child.
                 </p>
             </div>
-            <div class="card">
+            <div class="card tilt reveal" data-delay="2" style="--accent: #6c5ce7">
+                <span class="card-icon" aria-hidden="true">⭐️</span>
                 <h3>A quiz that checks it stuck</h3>
                 <p>
                     Two quick questions after each scenario, with stars for
@@ -70,7 +119,8 @@
                     without turning safety into a game.
                 </p>
             </div>
-            <div class="card">
+            <div class="card tilt reveal" data-delay="3" style="--accent: #4ecdc4">
+                <span class="card-icon" aria-hidden="true">🔖</span>
                 <h3>Progress that stays put</h3>
                 <p>
                     Bookmarks, read markers and stars are stored on the device,
@@ -81,38 +131,71 @@
     </section>
 
     <section>
-        <h2>The seven chapters</h2>
+        <h2 class="reveal">How an evening goes</h2>
+        <ol class="steps">
+            <li class="reveal" data-delay="1">
+                <span class="step-num">1</span>
+                <h3>Pick a scenario</h3>
+                <p>Open a chapter and choose the situation that fits your week.</p>
+            </li>
+            <li class="reveal" data-delay="2">
+                <span class="step-num">2</span>
+                <h3>Read it together</h3>
+                <p>The situation, then numbered steps in plain words a child follows.</p>
+            </li>
+            <li class="reveal" data-delay="3">
+                <span class="step-num">3</span>
+                <h3>Check it stuck</h3>
+                <p>Two questions, a star, and a bookmark for the ones worth repeating.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="reveal">The seven chapters</h2>
         <ul class="chapter-list">
-            <li><span class="emoji">🚨</span> Stranger Safety <span class="count">15 · free</span></li>
-            <li><span class="emoji">🛡️</span> Bullying &amp; Pressure <span class="count">15</span></li>
-            <li><span class="emoji">🏫</span> School Life <span class="count">15</span></li>
-            <li><span class="emoji">💛</span> Feelings &amp; Emotions <span class="count">14</span></li>
-            <li><span class="emoji">💻</span> Online &amp; Digital Safety <span class="count">12</span></li>
-            <li><span class="emoji">🏠</span> Home &amp; Family <span class="count">15</span></li>
-            <li><span class="emoji">🌍</span> Out in the World <span class="count">15</span></li>
+            <li class="reveal" data-delay="1" style="--accent: #ff6b6b"><span class="emoji">🚨</span> Stranger Safety <span class="count free">15 · free</span></li>
+            <li class="reveal" data-delay="2" style="--accent: #ffb830"><span class="emoji">🛡️</span> Bullying &amp; Pressure <span class="count">15</span></li>
+            <li class="reveal" data-delay="3" style="--accent: #4ecdc4"><span class="emoji">🏫</span> School Life <span class="count">15</span></li>
+            <li class="reveal" data-delay="4" style="--accent: #f78fb3"><span class="emoji">💛</span> Feelings &amp; Emotions <span class="count">14</span></li>
+            <li class="reveal" data-delay="5" style="--accent: #6c5ce7"><span class="emoji">💻</span> Online &amp; Digital Safety <span class="count">12</span></li>
+            <li class="reveal" data-delay="6" style="--accent: #ff9f43"><span class="emoji">🏠</span> Home &amp; Family <span class="count">15</span></li>
+            <li class="reveal" data-delay="7" style="--accent: #45aaf2"><span class="emoji">🌍</span> Out in the World <span class="count">15</span></li>
         </ul>
     </section>
 
     <section>
-        <h2>Free and premium</h2>
-        <div class="card">
-            <p>
-                The full <strong>Stranger Safety</strong> chapter is free and
-                ad-supported. One purchase unlocks the remaining six chapters
-                forever and removes all advertising. There is no subscription
-                and nothing renews.
-            </p>
-            <p>
-                Bought it before, or moved to a new phone? Open the unlock
-                screen and tap <strong>Restore Purchase</strong> — the same
-                Apple Account or Google account gets it back at no cost.
-            </p>
+        <h2 class="reveal">Free and premium</h2>
+        <div class="plans">
+            <div class="card plan reveal" data-delay="1">
+                <span class="plan-tag">Free</span>
+                <h3>Stranger Safety</h3>
+                <p>
+                    The full <strong>Stranger Safety</strong> chapter is free and
+                    ad-supported — 15 scenarios and their quizzes, with nothing
+                    to buy first.
+                </p>
+            </div>
+            <div class="card plan featured reveal" data-delay="2">
+                <span class="plan-tag">One-time unlock</span>
+                <h3>All seven chapters</h3>
+                <p>
+                    One purchase unlocks the remaining six chapters forever and
+                    removes all advertising. There is no subscription and
+                    nothing renews.
+                </p>
+                <p class="plan-note">
+                    Bought it before, or moved to a new phone? Open the unlock
+                    screen and tap <strong>Restore Purchase</strong> — the same
+                    Apple Account or Google account gets it back at no cost.
+                </p>
+            </div>
         </div>
     </section>
 
     <section>
-        <h2>Built for parents</h2>
-        <div class="note">
+        <h2 class="reveal">Built for parents</h2>
+        <div class="note reveal">
             <p>
                 This is a guide for parents and carers, not an app for children
                 to use on their own. It is not in the Kids Category on either
@@ -120,6 +203,12 @@
                 Details are in the <a href="privacy.html">privacy policy</a>.
             </p>
         </div>
+    </section>
+
+    <section class="cta-band reveal">
+        <h2>Have a question before you start?</h2>
+        <p>Support answers land in the inbox of the people who wrote the scenarios.</p>
+        <a class="btn light" href="support.html">Get support</a>
     </section>
 
 </main>
@@ -135,6 +224,86 @@
         </nav>
     </div>
 </footer>
+
+<script>
+(function () {
+    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    /* Reveal on scroll. A geometry check rather than an IntersectionObserver,
+       so a fast flick past a section cannot leave it invisible. With reduced
+       motion everything is simply shown. */
+    var pending = [].slice.call(document.querySelectorAll(".reveal"));
+    var header = document.querySelector(".site-header");
+
+    if (reduced) {
+        pending.forEach(function (el) { el.classList.add("is-visible"); });
+        pending = [];
+    }
+
+    var revealVisible = function () {
+        var limit = window.innerHeight * 0.92;
+        pending = pending.filter(function (el) {
+            if (el.getBoundingClientRect().top >= limit) return true;
+            el.classList.add("is-visible");
+            return false;
+        });
+    };
+
+    /* One rAF-throttled handler drives both the reveals and the header state. */
+    var queued = false;
+    var onScroll = function () {
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(function () {
+            queued = false;
+            header.classList.toggle("is-scrolled", window.scrollY > 8);
+            if (pending.length) revealVisible();
+        });
+    };
+
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
+    revealVisible();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    window.addEventListener("load", onScroll);
+
+    /* Numbers count up the first time the stats strip is seen. */
+    var counted = false;
+    var runCount = function () {
+        if (counted) return;
+        counted = true;
+        document.querySelectorAll(".stat-num").forEach(function (el) {
+            var target = parseInt(el.getAttribute("data-count"), 10) || 0;
+            var suffix = el.getAttribute("data-suffix") || "";
+            if (reduced) {
+                el.innerHTML = target + suffix;
+                return;
+            }
+            var start = performance.now();
+            var duration = 900 + Math.min(target, 200) * 3;
+            var tick = function (now) {
+                var t = Math.min((now - start) / duration, 1);
+                var eased = 1 - Math.pow(1 - t, 3);
+                el.innerHTML = Math.round(target * eased) + suffix;
+                if (t < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+        });
+    };
+    var stats = document.querySelector(".stats");
+    if (stats && "IntersectionObserver" in window) {
+        var so = new IntersectionObserver(function (entries) {
+            if (entries.some(function (e) { return e.isIntersecting; })) {
+                runCount();
+                so.disconnect();
+            }
+        }, { threshold: 0.4 });
+        so.observe(stats);
+    } else {
+        runCount();
+    }
+})();
+</script>
 
 </body>
 </html>
