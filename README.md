@@ -52,7 +52,7 @@ firebase deploy --only hosting
 
 ## Before publishing, check
 
-- Contact address is `shawon0187@gmail.com` on all three pages. Swap it if a
+- Contact address is `creativecleancode@gmail.com` on all three pages. Swap it if a
   dedicated support address is wanted.
 - `privacy.html` §1 says "the developer identified on its store listings" —
   replace with the legal entity name if one should appear.
