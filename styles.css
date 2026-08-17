@@ -1,0 +1,333 @@
+/* Shared styles for the Kids Safety: Parent Guide site.
+   Palette is taken from the app itself: the cover gradient runs coral to
+   violet, and chapter accents reuse the in-app chapter colours. */
+
+:root {
+    --coral: #ff6b6b;
+    --violet: #6c5ce7;
+    --amber: #ffb830;
+    --teal: #4ecdc4;
+    --ink: #1d1b2e;
+    --body: #4a4761;
+    --muted: #6f6b86;
+    --surface: #ffffff;
+    --page: #fdf7f4;
+    --line: rgba(29, 27, 46, 0.1);
+    --radius: 20px;
+    --shadow: 0 18px 40px rgba(29, 27, 46, 0.1);
+    --max: 960px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--page);
+    color: var(--body);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0 0 0.5em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -0.01em; }
+h3 { font-size: 1.1rem; }
+
+p { margin: 0 0 1em; }
+
+a {
+    color: var(--violet);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover { color: var(--coral); }
+
+.wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header ------------------------------------------------------------------ */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(253, 247, 244, 0.88);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line);
+}
+
+.site-header .wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 66px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.brand img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.site-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.site-nav a {
+    color: var(--body);
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    color: var(--coral);
+}
+
+/* Hero -------------------------------------------------------------------- */
+
+.hero {
+    background: linear-gradient(140deg, #ffb347 0%, var(--coral) 45%, #a05cd6 100%);
+    color: #fff;
+    padding: 72px 0 84px;
+    text-align: center;
+}
+
+.hero h1 { color: #fff; }
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 34rem;
+    margin: 0 auto 1.5em;
+    color: rgba(255, 255, 255, 0.94);
+}
+
+.hero-icon {
+    width: 108px;
+    height: 108px;
+    border-radius: 26px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    margin-bottom: 20px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+/* Sections ---------------------------------------------------------------- */
+
+main { padding: 56px 0 24px; }
+
+section { margin-bottom: 56px; }
+
+.lede {
+    font-size: 1.08rem;
+    color: var(--muted);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px;
+}
+
+.grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid .card { margin: 0; }
+
+.card h3 { margin-bottom: 0.35em; }
+
+.card p:last-child { margin-bottom: 0; }
+
+.chapter-list {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.chapter-list li {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.chapter-list .count {
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.emoji {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.96rem;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+}
+
+th {
+    color: var(--ink);
+    font-weight: 700;
+    background: rgba(108, 92, 231, 0.06);
+}
+
+tbody tr:last-child td { border-bottom: 0; }
+
+ul.plain {
+    padding-left: 1.15em;
+    margin: 0 0 1em;
+}
+
+ul.plain li { margin-bottom: 0.45em; }
+
+.note {
+    border-left: 4px solid var(--amber);
+    background: #fff8e7;
+    border-radius: 0 14px 14px 0;
+    padding: 16px 20px;
+}
+
+.note p:last-child { margin-bottom: 0; }
+
+.updated {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 14px 26px;
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+}
+
+.btn:hover { background: var(--violet); color: #fff; }
+
+.btn.light {
+    background: #fff;
+    color: var(--coral);
+}
+
+.btn.light:hover { background: #fff; color: var(--violet); }
+
+/* Footer ------------------------------------------------------------------ */
+
+.site-footer {
+    border-top: 1px solid var(--line);
+    padding: 32px 0 48px;
+    font-size: 0.92rem;
+    color: var(--muted);
+}
+
+.site-footer .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    align-items: center;
+}
+
+.site-footer nav {
+    margin-left: auto;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.site-footer a { color: var(--body); }
+
+@media (max-width: 560px) {
+    .site-nav { width: 100%; margin-left: 0; gap: 16px; }
+    .site-footer nav { margin-left: 0; }
+    .hero { padding: 56px 0 64px; }
+}
