@@ -5,6 +5,13 @@ and one stylesheet — no build step, no dependencies, no JavaScript.
 
 **Live URL:** https://shawon1fb.github.io/Kids-Safety-web/
 
+| Page | URL |
+|---|---|
+| Landing | https://shawon1fb.github.io/Kids-Safety-web/ |
+| Privacy | https://shawon1fb.github.io/Kids-Safety-web/privacy.html |
+| Support | https://shawon1fb.github.io/Kids-Safety-web/support.html |
+| Terms | https://shawon1fb.github.io/Kids-Safety-web/terms.html |
+
 | File | Purpose |
 |---|---|
 | `index.html` | Landing page |
